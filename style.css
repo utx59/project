@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEFAE0;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+    background-color: #E9EDC9;
+    color: #a5a58d;
+    margin: 0px;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    text-align: left;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+h2 {
+    text-align: center;
+    color: #6d6875;
+}
+
+h3 {
+    font-size: larger;
+}
+
+h4 {
+    font-size: 18px;
+    color: #e2711d;
+}
+
+.about {
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.card1 {
+    /* about-card */
+    float: left;
+    background-color: #FAEDCD;
+    padding: 20px;
+    margin: 20px 10px 10px 100px;
+    border-radius: 20px;
+}
+
+.card1 .aboutpic {
+    width: 59%;
+    height: 59%;
+    border-radius: 50%;
+}
+
+.card1 img:last-child {
+    position: relative;
+    opacity: 0;
+    margin-top: -190px;
+    margin-bottom: 18px;
+    transition: all 0.8s ease-in-out;
+}
+
+.card1:hover img:last-child {
+    opacity: 1;
+}
+
+.card1 .name {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #b07d62;
+    text-align: left;
+}
+
+.card1 .detail {
+    color: #ad2e24;
+    font-weight: bold;
+    padding-left: -20px;
+}
+
+.card1 .detail2 {
+    color: #b07d62;
+}
+
+.menu {
+    float: right;
+    width: 30%;
+    text-align: center;
+}
+
+.card2 {
+    /* content-card */
+    background-color: #FAEDCD;
+    padding: 20px;
+    margin: 20px 100px 10px 10px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 10px;
+    grid-template-rows: 20px 1fr 20px;
+    grid-auto-flow: auto;
+    grid-gap: 10px;
+}
+
+.card2 .content {
+    text-align: left;
+    padding-left: 40px;
+    line-height: 34.5px;
+    grid-area: 2/1/3/6;
+}
+
+.content a {
+    color: #766259;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content a:hover {
+    font-style: italic;
+}
+
+.content a:active {
+    color: #a5a58d;
+}
+
+aside .icon {
+    /* content-icon */
+    text-align: center;
+    grid-area: 2/5/3/6;
+    padding-top: 5px;
+}
+
+.icon1 {
+    width: 10%;
+}
+
+.icon1 img {
+    width: 40px;
+    height: 40px;
+    transition: all 1s 0s ease;
+}
+
+.icon1 img:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.card3 {
+    /* more about card */
+    background-color: #EDDCD2;
+    padding: 20px;
+    margin: 20px 100px;
+    border-radius: 20px;
+}
+
+.card3 .other {
+    color: #8a817c;
+    line-height: 23px;
+    text-align: center;
+}
+
+.card4 {
+    /* skill-card */
+    background-color: #FAEDCD;
+    padding: 20px;
+    margin: 20px 100px;
+    border-radius: 20px;
+}
+
+.card4 .skillline {
+    border: 0;
+    padding-top: 1px;
+    background: linear-gradient(to right, transparent, #d4a373, transparent);
+}
+
+.card4 .skill {
+    text-align: left;
+    font-weight: bold;
+    padding-left: 55px;
+    color: #b07d62;
+    padding-left: 80px;
+    padding-bottom: 4px;
+    padding-top: 8px;
+}
+
+progress {
+    width: 70%;
+    height: 20px;
+    border-radius: 50px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f2f2f2;
+    border-radius: 50px;
+}
+
+progress::-webkit-progress-value {
+    background: #dab359;
+    border-radius: 50px;
+}
+
+.card5 {
+    /* personal exp card */
+    background-color: #EDDCD2;
+    padding: 20px;
+    margin: 20px 100px;
+    border-radius: 20px;
+}
+
+.card5 .personalstyle {
+    text-align: center;
+}
+
+.card5 img {
+    width: 70%;
+    height: 40%;
+    border-radius: 5%;
+}
+
+.card5 .meet {
+    transition: all 0.5s ease-in;
+}
+
+.card5 .meet:hover {
+    width: 72%;
+}
+
+.card5 .title1 {
+    color: #ad2e24;
+}
+
+.card5 .line {
+    border: 0;
+    padding-top: 1px;
+    background: linear-gradient(to right, transparent, #ff9770, transparent);
+}
+
+.card5 .text {
+    color: #bb8588;
+    font-weight: bold;
+}
+
+.card6 {
+    /* other exp card */
+    background-color: #FAEDCD;
+    padding: 20px;
+    margin: 20px 100px;
+    border-radius: 20px;
+}
+
+.card6 .ytb {
+    transition: all 0.5s ease-in;
+}
+
+.card6 .ytb:hover {
+    width: 72%;
+}
+
+.card6 .title2 {
+    color: #db7c26;
+}
+
+.card6 .text2 {
+    color: #cb997e;
+    font-weight: bold;
+}
+
+.card6 img {
+    width: 70%;
+    height: 40%;
+    border-radius: 5%;
+}
+
+.card7 {
+    /* travel-card */
+    background-color: #EDDCD2;
+    padding: 20px;
+    margin: 20px 100px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: auto;
+    grid-gap: 10px;
+}
+
+.card7 .top7 {
+    text-align: center;
+    grid-area: 1/1/2/4;
+}
+
+.card7 .smallcard {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.525);
+}
+
+.card7 .year {
+    color: #766259;
+    font-size: 8px;
+    padding-bottom: 8px;
+}
+
+.card7 img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.card7 .traveltext {
+    color: #8a817c;
+    padding-top: 5px;
+}
+
+.coverflow {
+    width: 100%;
+    /* height: 490px; */
+    position: relative;
+}
+
+.coverflow div {
+    display: block;
+    position: absolute;
+    top: -186px;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    animation: silder 15s linear infinite;
+}
+
+.coverflow div img {
+    max-width: 100%;
+}
+
+@keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+.coverflow div:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.coverflow div:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.coverflow div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.coverflow:hover div {
+    animation-play-state: paused;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.kim {
+    /* display: none; */
+    width: 4%;
+    position: fixed;
+    z-index: 99;
+    right: 1.5%;
+    bottom: 3%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.kim:hover {
+    width: 5%;
+}
+
+footer {
+    background-color: #E9EDC9;
+    color: #a5a58d;
+    text-align: center;
+    line-height: 25px;
+    padding: 10px;
+}
