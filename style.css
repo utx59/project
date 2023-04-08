@@ -44,12 +44,6 @@ h4 {
     color: #e2711d;
 }
 
-/* .about {
-    float: left;
-    width: 70%;
-    text-align: left;
-} */
-
 main .container {
     display: flex;
     justify-content: space-between;
@@ -69,47 +63,27 @@ main .container {
     grid-gap: 10px;
 }
 
-/* main .block1 {
-    width: 65%;
-    height: 100%;
-    background-color: #FAEDCD;
-    margin: 20px 10px 10px 100px;
-    border-radius: 20px;
-}
-
-main .block2 {
-    width: 30%;
-    height: 10%;
-    background-color: #FAEDCD;
-    margin: 20px 100px 10px 10px;
-    border-radius: 20px;
-} */
-
 .card1 .sentence {
     text-align: center;
     padding-top: 15px;
-    /* line-height: 34.5px; */
     grid-area: 2/2/4/3;
 }
 
 .card1 .birth {
     text-align: left;
     padding-top: 15px;
-    /* line-height: 34.5px; */
     grid-area: 2/3/3/4;
 }
 
 .card1 .pers {
     text-align: left;
     padding-top: 5px;
-    /* line-height: 34.5px; */
     grid-area: 3/3/4/4;
 }
 
 .card1 .hobby {
     text-align: left;
     padding-top: 5px;
-    /* line-height: 34.5px; */
     grid-area: 3/4/4/5;
 }
 
@@ -130,18 +104,11 @@ main .block2 {
     color: #ad2e24;
     font-weight: bold;
     margin-top: 10px;
-    /* padding-left: -20px; */
 }
 
 .card1 .detail2 {
     color: #b07d62;
 }
-
-/* .menu {
-    float: right;
-    width: 30%;
-    text-align: center;
-} */
 
 .card2 {
     /* content-card */
