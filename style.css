@@ -52,7 +52,7 @@ main .container {
 .card1 {
     /* about-card */
     width: 72%;
-    height: 280px;
+    height: auto;
     background-color: #FAEDCD;
     margin: 20px 10px 10px 100px;
     border-radius: 20px;
@@ -113,22 +113,26 @@ main .container {
 .card2 {
     /* content-card */
     width: 25%;
-    height: 280px;
+    display: flex;
+    /* height: 280px; */
+    align-items: stretch;
     background-color: #FAEDCD;
     margin: 20px 100px 10px 10px;
     border-radius: 20px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5, 1fr) 10px;
     grid-template-rows: 20px 1fr 20px;
     grid-auto-flow: auto;
-    grid-gap: 10px;
+    grid-gap: 10px; */
 }
 
 .card2 .content {
     text-align: left;
     padding-left: 40px;
+    padding-top: 35px;
     line-height: 34.5px;
-    grid-area: 2/1/3/6;
+    width: 70%;
+    /* grid-area: 2/1/3/6; */
 }
 
 .content a {
@@ -148,8 +152,9 @@ main .container {
 aside .icon {
     /* content-icon */
     text-align: center;
-    grid-area: 2/5/3/6;
-    padding-top: 5px;
+    /* grid-area: 2/5/3/6; */
+    padding-top: 35px;
+    width: 28%;
 }
 
 .icon1 {
