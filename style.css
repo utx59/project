@@ -405,6 +405,7 @@ progress::-webkit-progress-value {
 .kim {
     /* display: none; */
     width: 4%;
+    height: auto;
     position: fixed;
     z-index: 99;
     right: 1.5%;
